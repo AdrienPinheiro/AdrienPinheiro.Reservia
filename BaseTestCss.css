@@ -1,0 +1,9 @@
+@font-face{
+    font-family: 'Raleway';
+    src: url('Police/Raleway-VariableFont_wght.ttf');
+}
+
+h1{
+    font-family: 'Raleway';
+}
+
