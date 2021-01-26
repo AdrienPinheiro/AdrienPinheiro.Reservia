@@ -56,7 +56,6 @@ nav{
 
 #Inscription a{
     color: #80b2fe;
-    font-weight: ;
 }
 
 #Inscription:hover a{
@@ -64,14 +63,46 @@ nav{
     color:rgba(0, 110, 255, 0.829)
 }
 
+#recherche{
+    display: flex;
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+    flex-direction: column;
+}
+
+.Filtres{
+    display: flex;
+    flex: row;
+}
+
+
+
 footer{
     background-color: #f2f2f2;
 }
 
-.Article{
+.Articles{
     background-color: #f2f2f2;
+    height: 670px;
+    display: flex;
 }
 
+.Article1{
+    width: 70%;
+    margin: 10px 5px 10px 1%;
+}
+
+.Article2{
+    width: 30%;
+    margin: 10px 1% 10px 5px;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+}
 a{
     color: #000000;
     text-decoration: none;
@@ -85,7 +116,7 @@ h2{
     font-weight: bold;
 }
 
-.Filtres {
+.Contour {
     font-weight: bold;
     border: 1px grey solid;
     border-radius: 20%;
