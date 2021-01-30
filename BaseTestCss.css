@@ -111,10 +111,14 @@ footer{
 
 }
 
-footer ul{
-    list-style-type: none;
+footer .col4 div{
+    padding: 20px;
 }
 
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
 
 
 a{
@@ -142,7 +146,7 @@ li:hover{
 
 /* Syteme de colonne */
 .col4{
-    width: 33.33333333%;
+    width: 33.333%;
 }
 
 /* @media = s'il se passe ça : https://www.alsacreations.com/article/lire/930-css3-media-queries.html */
