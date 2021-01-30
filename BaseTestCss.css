@@ -3,13 +3,11 @@
     src: url('Police/Raleway-VariableFont_wght.ttf');
 }
 
-#site{
-    font-family: 'Raleway';
-}
-
 body{
+    font-family: 'Raleway';
     margin: 0;
 }
+
 
 header{
     width: 100%;
@@ -109,6 +107,7 @@ footer{
     display: flex;
     width: 100%;
     height: 230px;
+    flex-wrap: wrap;
 
 }
 
@@ -143,11 +142,11 @@ li:hover{
 
 /* Syteme de colonne */
 .col4{
-    width: 33%;
+    width: 33.33333333%;
 }
 
 /* @media = s'il se passe ça : https://www.alsacreations.com/article/lire/930-css3-media-queries.html */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .col4{
         width: 100%;
     }
