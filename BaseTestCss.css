@@ -7,10 +7,13 @@
     font-family: 'Raleway';
 }
 
+body{
+    margin: 0;
+}
+
 header{
     width: 100%;
     height: 105px;
-    overflow: auto;
     display: flex;
 }
 
@@ -23,10 +26,6 @@ header{
 img{
     width: auto;
     height: 100%;
-}
-
-alt{
-    font-family: 'Raleway';
 }
 
 nav{
@@ -94,7 +93,7 @@ nav{
     margin: 10px 1% 10px 5px;
 }
 
-div{
+.row{
     display: flex;
     flex-direction: row;
 }
@@ -104,6 +103,7 @@ aside{
     height: 575px;
 }
 
+/* Footer */
 footer{
     background-color: #f2f2f2;
     display: flex;
@@ -116,17 +116,7 @@ footer ul{
     list-style-type: none;
 }
 
-.Apropos{
-    width: 33%;
-}
 
-.Noshébergements{
-    width: 33%;
-}
-
-.Assistance{
-    width: 33%;
-}
 
 a{
     color: #000000;
@@ -151,3 +141,14 @@ li:hover{
     font-weight: bold;
 }
 
+/* Syteme de colonne */
+.col4{
+    width: 33%;
+}
+
+/* @media = s'il se passe ça : https://www.alsacreations.com/article/lire/930-css3-media-queries.html */
+@media screen and (max-width: 768px) {
+    .col4{
+        width: 100%;
+    }
+}
