@@ -41,16 +41,17 @@ header{
     height: 105px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
-#Titresite{
+.TitreSite{
     margin: 0;
-    position:fixed;
+    height: 50px;
 }
 
 img{
     width: auto;
-    height: 50%;
+    height: 100%;
 }
 
 nav{
@@ -97,31 +98,61 @@ nav{
     flex-direction: column;
 }
 
-.Filtres{
+.filtres{
     display: flex;
-    flex: row;
+    justify-content: left;
+    flex-wrap: wrap;
 }
 
-.Contour {
-    font-weight: bold;
+.bullette{
+    border: 1px black solid;
+    border-radius: 25%;
+    display: flex;
+    align-self: center;
+    margin: 20px 0 20px 30px;
+    padding: 5px 0 5px 0;
+}
+
+.bulletteimage{
+    background-color: grey;
+    border-radius: 50%;
+    justify-content: left;
+}
+
+.bulletteinfo{
+    display: flex;
+}
+
+.bulletteimageinfo{
     border: 1px grey solid;
-    border-radius: 20%;
+    border-radius: 50%; 
+    width: 20px; 
+    height: 20px;
+    text-align: center;  
+}
+
+.bullette-nameinfo{
+    margin: 0 0 0 5px;
 }
 
 /* Hebergement et pop */
-.Articles{
+.articles{
     background-color: #f2f2f2;
     border-radius: 2%;
     height: 670px;
     display: flex;  
 }
 
-.Article1{
+.article1{
     width: 70%;
     margin: 10px 5px 10px 1%;
 }
 
-.Article2{
+.afficherplus{
+    
+}
+
+.article2{
     width: 30%;
     margin: 10px 1% 10px 5px;
 }
@@ -187,10 +218,18 @@ li:hover{
   .col2{
       width: 25%;
   }
+
+  header{
+      height: 300px;
+  }
+
+
+
+
   #Inscription{
       order: -1;
   }
-  figure{
+  .TitreSite{
       order: -2;
   }
 
