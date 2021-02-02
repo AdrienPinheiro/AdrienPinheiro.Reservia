@@ -33,8 +33,13 @@ h2{
 .row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap-reverse;
 }
 
+span{
+    width: 100%;
+    display: flex;
+}
 /* En tête */
 header{
     width: 100%;
@@ -146,15 +151,103 @@ nav{
 .article1{
     width: 70%;
     margin: 10px 5px 10px 1%;
+    flex-direction: column;
 }
 
-.afficherplus{
+
+
+.ligne1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.ligne2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* Carte pour les articles */
+.card{
+    border: 1px grey solid;
+    border-radius: 5%;
+    box-shadow: 10px 5px 5px grey;
+    height: 200px;
+    margin-bottom: 30px;
+}
+.imagecard{
+    height:150px;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.imagecard img{
+    width: 150%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.textecard{
+    text-align: left;
+    padding-left: 10px;
     
 }
+
+.titrecard{
+    font-weight: bold;
+}
+
+.paragraphecard{
+    font-size: small;
+}
+
+.
 
 .article2{
     width: 30%;
     margin: 10px 1% 10px 5px;
+    flex-direction: column;
+    display: flex;
+}
+
+.titrepop{
+    width: 100%;
+}
+.cardpop{
+    border: 1px grey solid;
+    border-radius: 5%;
+    box-shadow: 10px 5px 5px grey;
+    height: 150px;
+    margin-bottom: 30px;
+    flex-direction: row;
+}
+
+.imagecardpop{
+    height:150px;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    align-self: flex-start;
+}
+
+.imagecardpop img{
+    width: 150%;
+    position: absolute;
+    height: 180px;  
+ 
+}
+
+.textecardpop{
+    text-align: left;
+    padding-left: 20px;
+    align-self: flex-end;
 }
 
 .article3{
@@ -204,6 +297,16 @@ li:hover{
     width: 10%;
 }
 
+.col3{
+    width: 25%;
+}
+
+.col8{
+    width: 70%;
+}
+
+
+
 /* @media = s'il se passe ça : https://www.alsacreations.com/article/lire/930-css3-media-queries.html */
 @media (max-width: 768px) {
     .col4{
@@ -217,6 +320,12 @@ li:hover{
   }
   .col2{
       width: 25%;
+  }
+  .col3{
+      width: 100%;
+  }
+  .col8{
+      width: 100%;
   }
 
   header{
