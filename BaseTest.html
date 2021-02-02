@@ -10,7 +10,7 @@
 	<script src="https://kit.fontawesome.com/49dac82f1e.js" crossorigin="anonymous"></script>
 </head>
 
-<body id="Site">
+<body>
 
 <header>
 
@@ -24,7 +24,7 @@
 	<p class="Menu col6"><a href=""> Activités </a> </p>
 </nav>
 
-<p id="Inscription" class= "col2"><a href="">S'inscrire </a></p>
+<p id="Inscription" class= "col12"><a href="">S'inscrire </a></p>
 
 </header>
 
@@ -33,19 +33,16 @@
 	<h2> Trouvez votre hébergement pour des vacances de rêve</h2>
 	<p> En plein centre ville ou en pleine nature</p>
 
-	<!-- Endroit de recherche avec bouton -->
-	
-<div class = "bullette">
-	<div class="bulletteimage">
-		<i class="fas fa-map-marker-alt"></i>
-	</div>
-	<div class="formulaire">
+	<form method="post" action=".php"> <!-- Endroit de recherche avec bouton -->
+		<p> 
+			<label for="map">
+				<i class="fas fa-map-marker-alt"></i>
+			</label>
+			<input type ="text" name="rechercheville" id="map" value="Marseille,France"/>
+		</p>
 
-	</div>
-	<div class="bullette-name">
-		Recherche
-	</div>
-</div>
+		<input type="submit" value="envoyer" />
+	</form>
 
 <div class="filtres">
 	<h2> Filtres </h2>
@@ -240,11 +237,13 @@
 <section class="articles article2 col3"> <!-- Les plus visités -->
 
 	<div class="titrepop">
-		 Les plus populaires 
-		 <i class="fas fa-chart-line"></i>
+		 <span>Les plus populaires </span>
+		 <i class="fas fa-chart-line"></i> 
 	</div>
-	
-	<div class="cardpop">
+
+<div class="Miseenpagecolonne">
+
+	<div class="card">
 		<a href="">
 			<div class="imagecardpop">
 				<img src="Populaires/HôtelLesoleildumatin.jpg" alt="Chambre d'Hôtel">
@@ -264,13 +263,104 @@
 		</a>
 	</div>
 
-
+</div>
 </section>
 </div>
 
 <section class="article3"> <!-- Activité-->
 
 	<h2> Activités à Marseille</h2>
+<div class="activites">
+	<div class="card col2">
+		<a href="">
+			<div class="imagecard">
+				<img src="Activites/Vieuxport.jpg" alt="Image d'un vieux port">
+			</div>
+
+			<div class="textecard">
+				<div class="titrecard">
+					Vieux Port
+				</div>
+			</div>
+		</a>
+	</div>
+
+	<div class="doublecase col2">
+
+		<div class="card">
+			<a href="">
+				<div class="imagecard">
+					<img src="Activites/Fortdepomègues.jpg" alt="Image d'un vieux fort">
+				</div>
+	
+				<div class="textecard">
+					<div class="titrecard">
+						Fort de Pomègues
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="card">
+			<a href="">
+				<div class="imagecard">
+					<img src="Activites/ÎlesduFrioul.jpg" alt="Image d'une îles">
+				</div>
+	
+				<div class="textecard">
+					<div class="titrecard">
+						Îles du Frioul
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<div class="card col2">
+		<a href="">
+			<div class="imagecard">
+				<img src="Activites/Parcnationaldescalanques.jpg" alt="Image d'un parc">
+			</div>
+
+			<div class="textecard">
+				<div class="titrecard">
+					Parc National des Calanques
+				</div>
+			</div>
+		</a>
+	</div>
+
+	<div class="doublecase col2">
+
+		<div class="card">
+			<a href="">
+				<div class="imagecard">
+					<img src="Activites/Notredamedelagarde.jpg" alt="Image d'un Monument">
+				</div>
+	
+				<div class="textecard">
+					<div class="titrecard">
+						Notre-Dame-de-la-Garde
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="card">
+			<a href="">
+				<div class="imagecard">
+					<img src="Activites/Parclongchamp.jpg" alt="Image d'un parc">
+				</div>
+	
+				<div class="textecard">
+					<div class="titrecard">
+						Parc Longchamp
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
 
 </section>
 

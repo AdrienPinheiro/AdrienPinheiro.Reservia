@@ -39,7 +39,17 @@ h2{
 span{
     width: 100%;
     display: flex;
+    font-weight: bold;
+    font-size: xx-large;
+    margin: 30px 0 30px 30px;
 }
+
+.bullette i{
+    color: rgb(0, 110, 255);
+}
+
+
+
 /* En tête */
 header{
     width: 100%;
@@ -80,7 +90,7 @@ nav{
 #Inscription{
     display: flex;
     margin: 20px 0px 10px 0px;
-    text-align:end;
+    align-items: center;
 }
 
 #Inscription a{
@@ -89,7 +99,7 @@ nav{
 
 #Inscription:hover a{
     font-weight: bold;
-    color:rgba(0, 110, 255, 0.829);
+    color:rgb(0, 110, 255);
     border-top: 2px rgba(0, 110, 255, 0.829) solid;
 }
 
@@ -171,26 +181,28 @@ nav{
 }
 /* Carte pour les articles */
 .card{
-    border: 1px grey solid;
     border-radius: 5%;
     box-shadow: 10px 5px 5px grey;
     height: 200px;
     margin-bottom: 30px;
 }
+
 .imagecard{
     height:150px;
     position: relative;
     overflow: hidden;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
 }
 
 .imagecard img{
-    width: 150%;
+    width: 98%;
+    height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 5px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
 }
 
 .textecard{
@@ -216,17 +228,16 @@ nav{
     display: flex;
 }
 
+.Miseenpagecolonne{
+    display: flex;
+    flex-direction: column;
+}
+
 .titrepop{
     width: 100%;
+    display: flex;
 }
-.cardpop{
-    border: 1px grey solid;
-    border-radius: 5%;
-    box-shadow: 10px 5px 5px grey;
-    height: 150px;
-    margin-bottom: 30px;
-    flex-direction: row;
-}
+
 
 .imagecardpop{
     height:150px;
@@ -238,10 +249,12 @@ nav{
 }
 
 .imagecardpop img{
-    width: 150%;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    height: 180px;  
- 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .textecardpop{
@@ -254,6 +267,14 @@ nav{
     width: 100%;
     height: 575px;
 }
+
+.activites{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+
 
 /* Footer */
 footer{
@@ -292,13 +313,17 @@ li:hover{
     width: 40%;
 }
 
-.col2
+.col12
 {
     width: 10%;
 }
 
 .col3{
     width: 25%;
+}
+
+.col2{
+    width: 20%;
 }
 
 .col8{
@@ -342,4 +367,35 @@ li:hover{
       order: -2;
   }
 
+  header{
+      height: auto;
+  }
+
+  nav{
+      height: auto;
+      box-shadow: 0px 3px 0px rgba(0,0,0, 0.1);
+  }
+
+  .Menu:hover a{
+      border-bottom: 2px rgba(0, 110, 255, 0.829) solid;
+      border-top: none;
+      color: rgba(0, 110, 255, 0.829);
+  }
+
+  #recherche{
+      height: auto;
+  }
+
+
+  .articles{
+      height: auto;
+  }
+
+  .article1{
+      background-color: white;
+  }
+
+  footer{
+      height: auto;
+  }
 }
