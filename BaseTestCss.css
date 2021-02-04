@@ -6,7 +6,7 @@
 /* Body */
 body{
     font-family: 'Raleway';
-    margin: 0;
+    margin: 0 30px 0 30px;
 }
 
 figure {
@@ -28,6 +28,7 @@ a{
 
 h2{
     font-weight: bold;
+    margin: 0;
 }
 
 .row{
@@ -85,6 +86,9 @@ nav{
 .Menu:hover a{
     color: #80b2fe;
     border-top: 2px rgba(0, 110, 255, 0.829) solid;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 #Inscription{
@@ -100,7 +104,6 @@ nav{
 #Inscription:hover a{
     font-weight: bold;
     color:rgb(0, 110, 255);
-    border-top: 2px rgba(0, 110, 255, 0.829) solid;
 }
 
 /* Partie recherche */
@@ -129,9 +132,13 @@ nav{
 }
 
 .bulletteimage{
-    background-color: grey;
+    background-color: rgb(184, 184, 184);
     border-radius: 50%;
-    justify-content: left;
+    text-align: center;
+    padding-top: 1px;
+    padding-right: 3px;
+    width: 25px;
+    height: 25px;
 }
 
 .bulletteinfo{
@@ -139,7 +146,7 @@ nav{
 }
 
 .bulletteimageinfo{
-    border: 1px grey solid;
+    border: 1px rgb(228, 203, 203) solid;
     border-radius: 50%; 
     width: 20px; 
     height: 20px;
@@ -194,7 +201,7 @@ nav{
 }
 
 .imagecard img{
-    width: 98%;
+    width: 100%;
     height: 100%;
     position: absolute;
     top: 50%;
@@ -219,7 +226,6 @@ nav{
     font-size: small;
 }
 
-.
 
 .article2{
     width: 30%;
@@ -238,6 +244,14 @@ nav{
     display: flex;
 }
 
+.cardpop{
+    border-radius: 5%;
+    box-shadow: 10px 5px 5px grey;
+    height: 200px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
 
 .imagecardpop{
     height:150px;
@@ -245,7 +259,7 @@ nav{
     overflow: hidden;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
-    align-self: flex-start;
+    
 }
 
 .imagecardpop img{
@@ -258,9 +272,8 @@ nav{
 }
 
 .textecardpop{
-    text-align: left;
+    text-align: right;
     padding-left: 20px;
-    align-self: flex-end;
 }
 
 .article3{
@@ -274,7 +287,21 @@ nav{
     justify-content: space-around;
 }
 
+.card-spe{
+    border-radius: 5%;
+    box-shadow: 10px 5px 5px grey;
+    height: 430px;
+    margin-bottom: 30px;
+}
 
+.imagecard-spe{
+    height:380px;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    
+}
 
 /* Footer */
 footer{
@@ -288,6 +315,16 @@ footer{
 
 footer .col4 div{
     padding: 20px;
+}
+
+.Titre{
+    font-weight: bold;
+    font-size: large;
+    padding-bottom: 0;
+}
+
+.espace{
+    padding-top: 10px
 }
 
 footer ul{
@@ -357,6 +394,10 @@ li:hover{
       height: 300px;
   }
 
+  body{
+    margin: 0;
+}
+
 
 
 
@@ -380,6 +421,8 @@ li:hover{
       border-bottom: 2px rgba(0, 110, 255, 0.829) solid;
       border-top: none;
       color: rgba(0, 110, 255, 0.829);
+      padding-left: 100px;
+      padding-right: 100px;
   }
 
   #recherche{
@@ -393,6 +436,10 @@ li:hover{
 
   .article1{
       background-color: white;
+  }
+
+  .imagecard-spe{
+      height: 200px;
   }
 
   footer{
