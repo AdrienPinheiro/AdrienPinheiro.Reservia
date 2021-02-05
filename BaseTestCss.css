@@ -6,6 +6,10 @@
 /* Body */
 body{
     font-family: 'Raleway';
+    margin: 0;
+}
+
+.decalesite{
     margin: 0 30px 0 30px;
 }
 
@@ -35,6 +39,8 @@ h2{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    margin: 0 0 50px 0;
 }
 
 span{
@@ -116,6 +122,38 @@ nav{
     flex-direction: column;
 }
 
+.search{
+    display: flex;
+    flex-direction: row;
+}
+
+.search-label{
+    background-color: grey;
+    height: 46px;
+    width: 40px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.search-label i{
+    text-align: center;
+}
+
+.search-input{
+    height: 42px;
+    border: 1px black solid;
+}
+
+.search-submit{
+    height: 46px;
+    background-color: blue;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 0 10px;
+    border: none;
+}
+
 .filtres{
     display: flex;
     justify-content: left;
@@ -124,21 +162,25 @@ nav{
 
 .bullette{
     border: 1px black solid;
-    border-radius: 25%;
+    border-radius: 20px;
     display: flex;
     align-self: center;
-    margin: 20px 0 20px 30px;
-    padding: 5px 0 5px 0;
+    margin: 0 0 0 30px;
 }
 
 .bulletteimage{
     background-color: rgb(184, 184, 184);
     border-radius: 50%;
     text-align: center;
-    padding-top: 1px;
-    padding-right: 3px;
-    width: 25px;
-    height: 25px;
+}
+
+.bulletteimage i{
+    height: 40px;
+    width: 40px;
+}
+
+.bullette-name {
+    padding: 0 5px;
 }
 
 .bulletteinfo{
@@ -171,7 +213,19 @@ nav{
     flex-direction: column;
 }
 
+.titresection1{
+    width: 100%;
+    margin: 50px 0 30px 50px;
+    font-weight: bold;
+    font-size: 1.8em;
+}
 
+.bassection1{
+    width: 100%;
+    margin: 30px 0 20px 60px;
+    font-size: x-large;
+    font-weight: bold;
+}
 
 .ligne1{
     display: flex;
@@ -239,26 +293,37 @@ nav{
     flex-direction: column;
 }
 
-.titrepop{
+.titresection2{
     width: 100%;
+    font-weight: bold;
+    font-size: large;
     display: flex;
+}
+
+.titresection2 i{
+    font-size: xx-large;
 }
 
 .cardpop{
     border-radius: 5%;
     box-shadow: 10px 5px 5px grey;
-    height: 200px;
     margin-bottom: 30px;
     display: flex;
+}
+
+.cardpop-body{
+    display: flex;
+    flex-direction: row;
 }
 
 
 .imagecardpop{
     height:150px;
+    width: 300px;
     position: relative;
     overflow: hidden;
     border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
     
 }
 
@@ -272,8 +337,8 @@ nav{
 }
 
 .textecardpop{
-    text-align: right;
-    padding-left: 20px;
+    text-align: left;
+    padding-left: 5px;
 }
 
 .article3{
@@ -285,6 +350,15 @@ nav{
     flex-direction: row;
     display: flex;
     justify-content: space-around;
+}
+
+#ancre-activites{
+    font-weight: bold;
+    margin: 0 0 30px 50px;
+}
+
+.espacementactivites{
+    margin: 0 20px 0 20px;
 }
 
 .card-spe{
@@ -319,12 +393,16 @@ footer .col4 div{
 
 .Titre{
     font-weight: bold;
-    font-size: large;
+    font-size: 1.3em;
     padding-bottom: 0;
 }
 
+.espacement-footer{
+  margin: 0 0 0 80px;
+}
+
 .espace{
-    padding-top: 10px
+    padding-top: 15px
 }
 
 footer ul{
@@ -338,7 +416,7 @@ li:hover{
 
 /* Syteme de colonne */
 .col4{
-    width: 33.333%;
+    width: 25%;
 }
 
 .col6

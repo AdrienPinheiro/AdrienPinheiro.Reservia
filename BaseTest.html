@@ -12,6 +12,8 @@
 
 <body>
 
+<div class="decalesite">
+
 <header>
 
 	<figure class="col6 TitreSite" >
@@ -33,15 +35,13 @@
 	<h2> Trouvez votre hébergement pour des vacances de rêve</h2>
 	<p> En plein centre ville ou en pleine nature</p>
 
-	<form method="post" action=".php"> <!-- Endroit de recherche avec bouton -->
-		<p> 
-			<label for="map">
-				<i class="fas fa-map-marker-alt"></i>
-			</label>
-			<input type ="text" name="rechercheville" id="map" value="Marseille,France"/>
-		</p>
-
-		<input type="submit" value="envoyer" />
+	<form method="post" action=".php" class="search"> <!-- Endroit de recherche avec bouton -->
+		
+		<label for="search-input" class="search-label">
+			<i class="fas fa-map-marker-alt"></i>
+		</label>
+		<input type ="text" name="search-input" id="search-input" value="Marseille,France" class="search-input"/><!--
+		--><input type="submit" value="Rechercher" class="search-submit"/>
 	</form>
 
 <div class="filtres">
@@ -100,7 +100,7 @@
 <div class="row">
 <section class="articles article1 col8"> <!--Appartement dispo-->
 
-	<h2 id="ancre-hebergement"> Hébergements à Marseille</h2>
+	<h2 id="ancre-hebergement" class="titresection1"> Hébergements à Marseille</h2>
 
 
 <div class="ligne1">
@@ -229,14 +229,14 @@
 
 
 <div class="afficherplus">
-	<h2>Afficher plus</h2>
+	<h2 class="bassection1">Afficher plus</h2>
 </div>
 
 </section>
 
 <section class="articles article2 col3"> <!-- Les plus visités -->
 
-	<div class="titrepop">
+	<div class="titresection2">
 		 <h2>Les plus populaires </h2>
 		 <i class="fas fa-chart-line"></i> 
 	</div>
@@ -245,6 +245,7 @@
 
 	<div class="cardpop">
 		<a href="">
+			<div class="cardpop-body">
 			<div class="imagecardpop">
 				<img src="Populaires/HôtelLesoleildumatin.jpg" alt="Chambre d'Hôtel">
 			</div>
@@ -260,6 +261,7 @@
 
 				</div>
 			</div>
+			</div>
 		</a>
 	</div>
 
@@ -270,6 +272,8 @@
 <section class="article3"> <!-- Activité-->
 
 	<h2 id="ancre-activites"> Activités à Marseille</h2>
+
+<div class="espacementactivites">
 <div class="activites">
 	<div class="card-spe col2">
 		<a href="">
@@ -364,11 +368,11 @@
 
 </section>
 
-
+</div>
 
 <footer>
 
-	<div class="col4">
+	<div class="col4 espacement-footer">
 		<div>
 			<p class="Titre"> A propos</p>
 			<ul>
@@ -379,7 +383,7 @@
 		</div>
 	</div>
 
-	<div class="col4">
+	<div class="col4 espacement-footer">
 		<div>
 			<p class="Titre"> Nos hébergements</p>
 			<ul> 
@@ -389,7 +393,7 @@
 		</div>
 	</div>
 
-	<div class="col4">
+	<div class="col4 espacement-footer">
 		<div>
 			<p class="Titre"> Assistance</p>
 			<ul> 
