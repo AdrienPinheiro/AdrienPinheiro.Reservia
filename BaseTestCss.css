@@ -399,7 +399,7 @@ nav{
     margin-bottom: 30px;
 }
 
-.imagecard-specol1{
+.imagecard-specol1 img{
     height: 200px;
     width: 100%;
     position: relative;
@@ -408,6 +408,8 @@ nav{
     border-top-right-radius: 5%;
 }
 
+
+
 .card-specol2{
     height: 150px;
     border-radius: 5%;
@@ -415,7 +417,7 @@ nav{
     margin-bottom: 30px;  
 }
 
-.imagecard-specol2{
+.imagecard-specol2 img{
     height: 100px;
     width: 100%;
     position: relative;
@@ -432,6 +434,16 @@ nav{
     overflow: hidden;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;  
+}
+
+.imagecard-act{
+    height:150px;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    display: flex;
+    justify-content: center;
 }
 
 .titrecard-activite{
