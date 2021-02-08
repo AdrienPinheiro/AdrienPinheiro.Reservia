@@ -52,7 +52,7 @@ span{
 }
 
 .bullette i{
-    color: rgb(0, 110, 255);
+    color: #0065FC;
 }
 
 
@@ -90,8 +90,8 @@ nav{
 }
 
 .Menu:hover a{
-    color: #80b2fe;
-    border-top: 2px rgba(0, 110, 255, 0.829) solid;
+    color: #0065FC;
+    border-top: 2px #0065FC solid;
     padding-top: 40px;
     padding-right: 20px;
     padding-left: 20px;
@@ -122,13 +122,20 @@ nav{
     flex-direction: column;
 }
 
+.titrerecherche{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
 .search{
     display: flex;
     flex-direction: row;
+    margin: 20px 0 20px 0;
 }
 
 .search-label{
-    background-color: grey;
+    background-color: #F2F2F2;
     height: 46px;
     width: 40px;
     border-top-left-radius: 15px;
@@ -142,11 +149,13 @@ nav{
 .search-input{
     height: 42px;
     border: 1px black solid;
+    font-weight: bold;
+    padding-left: 10px;
 }
 
 .search-submit{
     height: 46px;
-    background-color: blue;
+    background-color: #0065FC;
     color: white;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -158,10 +167,17 @@ nav{
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.titrefiltre{
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .bullette{
-    border: 1px black solid;
+    border: 1px #F2F2F2 solid;
     border-radius: 20px;
     display: flex;
     align-self: center;
@@ -169,7 +185,7 @@ nav{
 }
 
 .bulletteimage{
-    background-color: rgb(184, 184, 184);
+    background-color: #DEEBFF;
     border-radius: 50%;
     text-align: center;
 }
@@ -185,23 +201,28 @@ nav{
 
 .bulletteinfo{
     display: flex;
+    margin: 30px 0 20px 0;
 }
 
 .bulletteimageinfo{
-    border: 1px rgb(228, 203, 203) solid;
+    border: 1px #F2F2F2 solid;
     border-radius: 50%; 
-    width: 20px; 
-    height: 20px;
+    width: 18px; 
+    height: 18px;
     text-align: center;  
+    color: #0065FC;
+    font-size: small;
+    margin-right: 10px;
 }
 
-.bullette-nameinfo{
-    margin: 0 0 0 5px;
+.recherche p{
+    margin: 30px 0 20px 0;
 }
 
 /* Hebergement et pop */
+
 .articles{
-    background-color: #f2f2f2;
+    background-color: #F2F2F2;
     border-radius: 2%;
     height: 670px;
     display: flex;  
@@ -215,15 +236,15 @@ nav{
 
 .titresection1{
     width: 100%;
-    margin: 50px 0 30px 50px;
-    font-weight: bold;
-    font-size: 1.8em;
+    margin: 30px 0 30px 30px;
+    font-weight: 900;
+    font-size: 1.5em;
 }
 
 .bassection1{
     width: 100%;
-    margin: 30px 0 20px 60px;
-    font-size: x-large;
+    margin: 30px 0 0px 50px;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -231,39 +252,40 @@ nav{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    margin-left: 30px;
 }
 
 .ligne2{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    margin-left: 30px;
 }
+
 /* Carte pour les articles */
 .card{
     border-radius: 5%;
     box-shadow: 10px 5px 5px grey;
     height: 200px;
     margin-bottom: 30px;
+    margin-right: 60px;
+    background-color: white;
 }
 
 .imagecard{
     height:150px;
     position: relative;
     overflow: hidden;
+    padding: 5px;
 }
 
 .imagecard img{
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 5px;
     border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+    border-top-right-radius: 5%;  
 }
 
 .textecard{
@@ -291,17 +313,20 @@ nav{
 .Miseenpagecolonne{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .titresection2{
     width: 100%;
     font-weight: bold;
-    font-size: large;
+    font-size: 1em;
+    margin: 30px 0 20px 30px;
     display: flex;
+    justify-content: space-between;
 }
 
 .titresection2 i{
-    font-size: xx-large;
+    font-size: large;
 }
 
 .cardpop{
@@ -309,13 +334,14 @@ nav{
     box-shadow: 10px 5px 5px grey;
     margin-bottom: 30px;
     display: flex;
+    width: 80%;
+    background-color: white;
 }
 
 .cardpop-body{
     display: flex;
     flex-direction: row;
 }
-
 
 .imagecardpop{
     height:150px;
@@ -324,21 +350,19 @@ nav{
     overflow: hidden;
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
-    
+    padding: 5px;
 }
 
 .imagecardpop img{
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
 }
 
 .textecardpop{
-    text-align: left;
-    padding-left: 5px;
+    padding: 10px 20px 10px 5px;
+    width: 150%;
 }
 
 .article3{
@@ -368,13 +392,52 @@ nav{
     margin-bottom: 30px;
 }
 
+.card-specol1{
+    height: 250px;
+    border-radius: 5%;
+    box-shadow: 10px 5px 5px grey;
+    margin-bottom: 30px;
+}
+
+.imagecard-specol1{
+    height: 200px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.card-specol2{
+    height: 150px;
+    border-radius: 5%;
+    box-shadow: 10px 5px 5px grey;
+    margin-bottom: 30px;  
+}
+
+.imagecard-specol2{
+    height: 100px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+
+
 .imagecard-spe{
     height:380px;
     position: relative;
     overflow: hidden;
     border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
-    
+    border-top-right-radius: 5%;  
+}
+
+.titrecard-activite{
+    font-weight: bold;
+    font-size: 1em;
+    padding: 15px 10px;
 }
 
 /* Footer */
