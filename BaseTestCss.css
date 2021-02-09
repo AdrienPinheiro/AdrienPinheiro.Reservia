@@ -95,12 +95,13 @@ nav{
     text-align: center;
 }
 
-.Menu{
-    margin-left: 0%;
-    margin-right: 0%;
+.menu-item a{
+    border-top: 2px white solid;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
-.Menu:hover a{
+.menu-item:hover a{
     color: #0065FC;
     border-top: 2px #0065FC solid;
     padding-top: 40px;
@@ -108,19 +109,14 @@ nav{
     padding-left: 20px;
 }
 
-#Inscription{
-    display: flex;
-    margin: 20px 0px 10px 0px;
-    align-items: center;
+.menu-item-fixed{
+    color: #0065FC;
+
 }
 
-#Inscription a{
-    color: #80b2fe;
-}
-
-#Inscription:hover a{
+.menu-item-fixed:hover{
     font-weight: bold;
-    color:rgb(0, 110, 255);
+    
 }
 
 /* Partie recherche */
@@ -151,17 +147,21 @@ nav{
     width: 40px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    justify-content: center;
 }
 
 .search-label i{
-    text-align: center;
+    height: 46px;
+    line-height: 46px;
 }
 
-.search-input{
+.search-input {
     height: 42px;
-    border: 1px black solid;
+    border: 1px #F2F2F2 solid;
     font-weight: bold;
     padding-left: 10px;
+    border-right: none;
+    border-left: none;
 }
 
 .search-submit{
@@ -193,6 +193,8 @@ nav{
     display: flex;
     align-self: center;
     margin: 0 0 0 30px;
+    height: 40px;
+    line-height: 40px;
 }
 
 .bulletteimage{
@@ -247,7 +249,7 @@ nav{
 
 .titresection1{
     width: 100%;
-    margin: 30px 0 30px 30px;
+    padding: 30px 0 30px 30px;
     font-weight: 900;
     font-size: 1.5em;
 }
@@ -316,22 +318,21 @@ nav{
 
 .article2{
     width: 30%;
-    margin: 10px 1% 10px 5px;
     flex-direction: column;
     display: flex;
+    padding: 0 20px;
 }
 
 .Miseenpagecolonne{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .titresection2{
     width: 100%;
     font-weight: bold;
     font-size: 1em;
-    margin: 30px 0 20px 30px;
+    padding: 20px 0 10px 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -345,7 +346,7 @@ nav{
     box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.45);
     margin-bottom: 30px;
     display: flex;
-    width: 80%;
+    width: 100%;
     background-color: white;
 }
 
@@ -356,7 +357,7 @@ nav{
 
 .imagecardpop{
     height:150px;
-    width: 300px;
+    width: auto;
     position: relative;
     overflow: hidden;
     border-top-left-radius: 5%;
@@ -373,7 +374,7 @@ nav{
 
 .textecardpop{
     padding: 10px 20px 10px 5px;
-    width: 150%;
+    width: 70%;
 }
 
 .article3{
