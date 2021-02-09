@@ -182,6 +182,7 @@ nav{
     margin-top: 20px;
 }
 
+
 .titrefiltre{
     font-weight: bold;
     font-size: 1.2em;
@@ -455,7 +456,6 @@ nav{
 .imagecard-specol2 img{
     height: 100px;
     width: 100%;
-    position: relative;
     overflow: hidden;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
@@ -479,6 +479,11 @@ nav{
     border-top-right-radius: 5%;
     display: flex;
     justify-content: center;
+}
+
+.imagecard-act img{
+    width: 100%;
+    height: auto;
 }
 
 .titrecard-activite{
@@ -566,10 +571,10 @@ li:hover{
       width: 100%;
   }
   .col6{
-      width: 70%;
+      width: 100%;
   }
   .col2{
-      width: 25%;
+      width: 100%;
   }
   .col3{
       width: 100%;
@@ -584,6 +589,10 @@ li:hover{
 
   body{
     margin: 0;
+}
+
+p{
+    text-align: justify;
 }
 
 
@@ -601,11 +610,10 @@ li:hover{
       position: relative;
   }
 
-  nav{
+  .menu{
       width: 100%;
+      justify-content: space-around;
   }
-
-  .menu
 
   .menu-item-fixed{
       position: absolute;
@@ -613,37 +621,143 @@ li:hover{
       right: 0;
   }
 
+  .menu-item{
+      padding: 0;
+  }
+
+  .menu-item a{
+    padding: 0;
+}
+
   nav{
       height: auto;
       box-shadow: 0px 3px 0px rgba(0,0,0, 0.1);
   }
 
-  .Menu:hover a{
+  .menu-item:hover a{
       border-bottom: 2px rgba(0, 110, 255, 0.829) solid;
       border-top: none;
       color: rgba(0, 110, 255, 0.829);
-      padding-left: 100px;
-      padding-right: 100px;
+  }
+
+  .menu-item-fixed:hover a{
+      border-top: none;
+      border-bottom: none;
+      color: black;
   }
 
   #recherche{
       height: auto;
   }
 
+.search{
+    width: 100%;
+}
+
+  .search-submit{
+    height: 48px;
+    width: 40px;
+  }
+
+  .filtres{
+      align-content: center;
+  }
 
   .articles{
       height: auto;
+      width: 100%;
   }
 
   .article1{
       background-color: white;
+      margin: 0;
   }
 
-  .imagecard-spe{
+  .titresection1{
+      padding: 20px 0 20px 10px;
+      font-size: 1.3em;
+  }
+
+  .bassection1{
+      padding-top: 10px;
+      margin: 0;
+  }
+
+  .article3{
+      height: auto;
+  }
+
+  .activites{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+  }
+
+  #ancre-activites{
+      margin: 0 0 30px 20px;
+      font-size: 1.3em;
+  }
+
+  .Titre{
+      font-size: 1em;
+  }
+
+  .card-spe{
       height: 200px;
   }
 
+  .imagecard-spe{
+    height: 150px;
+  }
+
+  .imagecard-spe img{
+    height: 150px;
+    width: 100%;
+  }
+
+  .card-specol1{
+      height: 200px;
+  }
+
+  .imagecard-specol1{
+    height: 150px;
+}
+
+.imagecard-specol1 img{
+    height: 150px;
+}
+
+  .card-specol2{
+      height: 200px;
+  }
+
+  .imagecard-specol2{
+    height: 150px;
+}
+
+    .imagecard-specol2 img{
+    height: 150px;
+}
+
+.imagecard-act img{
+    height: 150px;
+    width: 100%;
+}
+
+
+
   footer{
       height: auto;
+  }
+
+  .espacement-footer{
+      margin: 0 0 0 30px;
+  }  
+
+  .espace{
+      padding-top: 5px;
+  }
+  footer div{
+      padding: 0;
   }
 }
