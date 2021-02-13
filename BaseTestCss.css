@@ -392,12 +392,15 @@ nav{
     padding: 0 10px;
     width: 100%;
     text-align: justify;
+    height: 125px;
+    overflow: hidden;
 }
 
 .etoilecard-pop{
     color: #0065FC;
     font-size: x-small;
-    
+    display: inline;
+    justify-content: flex-end;
 }
 
 .article3{
@@ -658,7 +661,7 @@ p{
 
   .search-submit{
     height: 48px;
-    width: 40px;
+    width: auto;
   }
 
   .search-button{
@@ -669,8 +672,17 @@ p{
       display: flex;
   }
 
+  .search-icon i{
+      height: 48px;
+      line-height: 48px;
+  }
+
   .filtres{
       display: inline-block;
+  }
+
+  .bullette{
+      margin: 0;
   }
 
   .articles{
