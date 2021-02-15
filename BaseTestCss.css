@@ -744,6 +744,14 @@ p{
       padding: 20px 0 20px 10px;
       font-size: 1.3em;
   }
+  
+  .ligne1{
+      margin: 0;
+  }
+
+  .ligne2{
+      margin: 0;
+  }
 
   .bassection1{
       padding-top: 10px;
