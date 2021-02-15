@@ -226,7 +226,7 @@ nav{
 }
 
 .bullette:hover{
-    border: 2px black solid;
+    border: 1px black solid;
 }
 
 .recherche p{
@@ -291,13 +291,13 @@ nav{
     height:100px;
     overflow: hidden;
     padding: 5px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
 }
 
 .imagecard img{
     width: 100%;
     height: auto;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
 }
 
 .textecard{
@@ -394,13 +394,20 @@ nav{
     text-align: justify;
     height: 125px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.paragraphecardpop{
+    padding-bottom: 15px;
+    font-size: 0.8em;
 }
 
 .etoilecard-pop{
     color: #0065FC;
     font-size: x-small;
-    display: inline;
-    justify-content: flex-end;
+    padding-bottom: 5px;
 }
 
 .article3{
@@ -435,6 +442,11 @@ nav{
     border-radius: 5%;
     box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.45);
     margin-bottom: 30px;
+}
+
+.imagecard-specol1{
+    display: grid;
+    place-items: center;
 }
 
 .imagecard-specol1 img{
@@ -565,7 +577,38 @@ li:hover{
     width: 70%;
 }
 
+@media (min-width: 1100px) and (max-width: 1350px){
+    .col8{
+        width: 60%;
+    }
 
+    .article2{
+        width: 35%;
+    }
+
+    footer{
+        height: auto;
+    }
+
+}
+@media (min-width: 769px) and (max-width: 1099px){
+    .col8{
+        width: 100%;
+    }
+
+    .article2{
+        width: 100%;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    #recherche{
+        height: auto;
+    }
+
+}
 
 /* @media = s'il se passe ça : https://www.alsacreations.com/article/lire/930-css3-media-queries.html */
 @media (max-width: 768px) {
@@ -657,6 +700,8 @@ p{
 
 .search{
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
   .search-submit{
@@ -677,9 +722,9 @@ p{
       line-height: 48px;
   }
 
-  .filtres{
-      display: inline-block;
-  }
+  .titrefiltre{
+      width: 100%;
+    }
 
   .bullette{
       margin: 0;
@@ -704,6 +749,7 @@ p{
       padding-top: 10px;
       margin: 0;
   }
+  
 
   .article3{
       height: auto;
@@ -734,15 +780,13 @@ p{
 .imagecard-spe{
     height:100px;
     overflow: hidden;
-    border-top-left-radius: 0%;
-    border-top-right-radius: 0%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
 }
 
 .imagecard-spe img{
     width: 100%;
     height: auto;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
 }
 
 .card-specol1{
@@ -755,13 +799,13 @@ p{
 .imagecard-specol1{
     height:100px;
     overflow: hidden;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
 }
 
 .imagecard-specol1 img{
     width: 100%;
     height: auto;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
 }
 
 .card{
@@ -774,6 +818,8 @@ p{
 .imagecard{
     height:100px;
     overflow: hidden;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
 }
 
 .imagecard img{
@@ -794,25 +840,28 @@ p{
 .imagecard-specol2{
     height:100px;
     overflow: hidden;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
 }
 
 .imagecard-specol2 img{
     width: 100%;
     height: auto;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
 }
 
 .imagecard-act{
     height:100px;
     overflow: hidden;
+    place-items: center;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
 }
 
 .imagecard-act img{
     width: 100%;
     height: auto;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
 }
 
   footer{
