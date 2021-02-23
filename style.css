@@ -772,7 +772,7 @@ p{
   }
 
   .card-spe{
-    border-radius: 5%;
+    border-radius: 20px;
     height: auto;
     margin-bottom: 30px;
     background-color: white;
@@ -781,8 +781,6 @@ p{
 .imagecard-spe{
     height:100px;
     overflow: hidden;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
 }
 
 .imagecard-spe img{
@@ -791,7 +789,7 @@ p{
 }
 
 .card-specol1{
-    border-radius: 5%;
+    border-radius: 20px;
     height: auto;
     margin-bottom: 30px;
     background-color: white;
@@ -800,8 +798,8 @@ p{
 .imagecard-specol1{
     height:100px;
     overflow: hidden;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .imagecard-specol1 img{
@@ -810,7 +808,7 @@ p{
 }
 
 .card{
-    border-radius: 5%;
+    border-radius: 20px;
     height: auto;
     margin-bottom: 30px;
     background-color: white;
@@ -819,19 +817,15 @@ p{
 .imagecard{
     height:100px;
     overflow: hidden;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
 }
 
 .imagecard img{
     width: 100%;
     height: auto;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
 }
 
 .card-specol2{
-    border-radius: 5%;
+    border-radius: 20px;
     box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.45);
     height: auto;
     margin-bottom: 30px;
@@ -841,23 +835,18 @@ p{
 .imagecard-specol2{
     height:100px;
     overflow: hidden;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+
 }
 
 .imagecard-specol2 img{
     width: 100%;
     height: auto;
-    border-top-right-radius: 0%;
-    border-top-left-radius: 0%;
 }
 
 .imagecard-act{
     height:100px;
     overflow: hidden;
     place-items: center;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
 }
 
 .imagecard-act img{
